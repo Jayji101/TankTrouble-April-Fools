@@ -1,4 +1,3 @@
-
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
@@ -27,7 +26,7 @@ public class GreenTank {
     public void setVel(double vel) {
         this.vel = vel;
     }
-    
+
     public int getX() {
         return x;
     }
@@ -41,42 +40,42 @@ public class GreenTank {
     }
 
     public void addTanks() {
-        tanks.add(new ImageIcon("greentank.png"));
-        tanks.add(new ImageIcon("greentank10deg.png"));
-        tanks.add(new ImageIcon("greentank20deg.png"));
-        tanks.add(new ImageIcon("greentank30deg.png"));
-        tanks.add(new ImageIcon("greentank40deg.png"));
-        tanks.add(new ImageIcon("greentank50deg.png"));
-        tanks.add(new ImageIcon("greentank60deg.png"));
-        tanks.add(new ImageIcon("greentank70deg.png"));
-        tanks.add(new ImageIcon("greentank80deg.png"));
-        tanks.add(new ImageIcon("greentank90deg.png"));
-        tanks.add(new ImageIcon("greentank100deg.png"));
-        tanks.add(new ImageIcon("greentank110deg.png"));
-        tanks.add(new ImageIcon("greentank120deg.png"));
-        tanks.add(new ImageIcon("greentank130deg.png"));
-        tanks.add(new ImageIcon("greentank140deg.png"));
-        tanks.add(new ImageIcon("greentank150deg.png"));
-        tanks.add(new ImageIcon("greentank160deg.png"));
-        tanks.add(new ImageIcon("greentank170deg.png"));
-        tanks.add(new ImageIcon("greentank180deg.png"));
-        tanks.add(new ImageIcon("greentank190deg.png"));
-        tanks.add(new ImageIcon("greentank200deg.png"));
-        tanks.add(new ImageIcon("greentank210deg.png"));
-        tanks.add(new ImageIcon("greentank220deg.png"));
-        tanks.add(new ImageIcon("greentank230deg.png"));
-        tanks.add(new ImageIcon("greentank240deg.png"));
-        tanks.add(new ImageIcon("greentank250deg.png"));
-        tanks.add(new ImageIcon("greentank260deg.png"));
-        tanks.add(new ImageIcon("greentank270deg.png"));
-        tanks.add(new ImageIcon("greentank280deg.png"));
-        tanks.add(new ImageIcon("greentank290deg.png"));
-        tanks.add(new ImageIcon("greentank300deg.png"));
-        tanks.add(new ImageIcon("greentank310deg.png"));
-        tanks.add(new ImageIcon("greentank320deg.png"));
-        tanks.add(new ImageIcon("greentank330deg.png"));
-        tanks.add(new ImageIcon("greentank340deg.png"));
-        tanks.add(new ImageIcon("greentank350deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank10deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank20deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank30deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank40deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank50deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank60deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank70deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank80deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank90deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank100deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank110deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank120deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank130deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank140deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank150deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank160deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank170deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank180deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank190deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank200deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank210deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank220deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank230deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank240deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank250deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank260deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank270deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank280deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank290deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank300deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank310deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank320deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank330deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank340deg.png"));
+        tanks.add(new ImageIcon("Player 2 Images/greentank350deg.png"));
     }
 
     public void drawTank(Graphics g) {
@@ -90,52 +89,38 @@ public class GreenTank {
 
         else if (dir == 1 || dir == 19) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 6, height + 4, null);
-        }
-        else if (dir == 2 || dir == 20) {
+        } else if (dir == 2 || dir == 20) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 12, height + 8, null);
-        }
-        else if (dir == 3 || dir == 21) {
+        } else if (dir == 3 || dir == 21) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 17, height + 9, null);
-        }
-        else if (dir == 4 || dir == 22) {
+        } else if (dir == 4 || dir == 22) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 20, height + 10, null);
-        }
-        else if (dir == 5 || dir == 23) {
+        } else if (dir == 5 || dir == 23) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 21, height + 10, null);
-        }
-        else if (dir == 6 || dir == 24) {
+        } else if (dir == 6 || dir == 24) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 19, height + 9, null);
-        }
-        else if (dir == 7 || dir == 25) {
+        } else if (dir == 7 || dir == 25) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 17, height + 5, null);
-        }
-        else if (dir == 8 || dir == 26) {
+        } else if (dir == 8 || dir == 26) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 15, height - 2, null);
         }
-        //draw upside down
+        // draw upside down
 
         else if (dir == 10 || dir == 28) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 15, height - 2, null);
-        }
-        else if (dir == 11 || dir == 29) {
+        } else if (dir == 11 || dir == 29) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 17, height + 5, null);
-        }
-        else if (dir == 12 || dir == 30) {
+        } else if (dir == 12 || dir == 30) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 19, height + 9, null);
-        }
-        else if (dir == 13 || dir == 31) {
+        } else if (dir == 13 || dir == 31) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 21, height + 10, null);
-        }
-        else if (dir == 14 || dir == 32) {
+        } else if (dir == 14 || dir == 32) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 20, height + 10, null);
-        }
-        else if (dir == 15 || dir == 33) {
+        } else if (dir == 15 || dir == 33) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 17, height + 9, null);
-        }
-        else if (dir == 16 || dir == 34) {
+        } else if (dir == 16 || dir == 34) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 12, height + 7, null);
-        }
-        else if (dir == 17 || dir == 35) {
+        } else if (dir == 17 || dir == 35) {
             g.drawImage(tanks.get(dir).getImage(), x, y, width + 6, height + 4, null);
         }
 
@@ -267,7 +252,6 @@ public class GreenTank {
             // angled portions next
             // y portions positive
 
-        
         } else if (dir == 1 || dir == 35) {
             y += (vel - 1);
         } else if (dir == 2 || dir == 34) {
@@ -345,10 +329,12 @@ public class GreenTank {
     public int getDir() {
         return dir;
     }
+
     public void setCenter() {
-        xcent = x + width/2;
-        ycent = y + height/2;
+        xcent = x + width / 2;
+        ycent = y + height / 2;
     }
+
     public int getXcent() {
         return xcent;
     }
@@ -360,6 +346,7 @@ public class GreenTank {
     public int getWidth() {
         return width;
     }
+
     public int getHeight() {
         return height;
     }
@@ -369,6 +356,10 @@ public class GreenTank {
         this.y = y;
     }
 
+    public void setDir(int direction) {
+        dir = direction;
+    }
+}
     public void setDir(int direction) {
         dir = direction;
     }
