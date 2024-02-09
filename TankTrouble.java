@@ -506,7 +506,7 @@ public class TankTrouble extends JLabel {
                 if (rb2.intersectsWithVert(insideVertWalls.get(i))) {
                     rb2.setSpeed(rb2.getXSpeed() * -1, rb2.getYSpeed());
                 }
-                
+
             }
 
             if (!rb1.collides(red) && !rb2.collides(red) && !rb3.collides(red) && !rb4.collides(red)
@@ -514,35 +514,32 @@ public class TankTrouble extends JLabel {
                     && !gb4.collides(red)
                     && !gb5.collides(red)) {
                 red.drawTank(g);
-            } else if (!gb1.collides(red) && !gb2.collides(red) && !gb3.collides(red)
-                    && !gb4.collides(red)
-                    && !gb5.collides(red)) {
+            } else {
                 if (time1 <= delayTime || time1 == maxTime || time2 <= delayTime || time2 == maxTime
                         || time3 <= delayTime || time3 == maxTime || time4 <= delayTime || time4 == maxTime
                         || time5 <= delayTime
-                        || time5 == maxTime && (!rb1.collides(red) && !rb2.collides(red) && !rb3.collides(red) && !rb4.collides(red)
-                        && !rb5.collides(red))) {
+                        || time5 == maxTime
+                                && (!rb1.collides(red) && !rb2.collides(red) && !rb3.collides(red) && !rb4.collides(red)
+                                        && !rb5.collides(red))) {
                     red.drawTank(g);
+                } else {
+                    red.setLocation(Integer.MAX_VALUE, Integer.MAX_VALUE);
                 }
-            } else {
-                red.setLocation(Integer.MAX_VALUE, Integer.MAX_VALUE);
             }
             if (!gb1.gollides(green) && !gb2.gollides(green) && !gb3.gollides(green) && !gb4.gollides(green)
                     && !gb5.gollides(green) && !rb1.gollides(green) && !rb2.gollides(green) && !rb3.gollides(green)
                     && !rb4.gollides(green)
                     && !rb5.gollides(green)) {
                 green.drawTank(g);
-            } else if (!rb1.gollides(green) && !rb2.gollides(green) && !rb3.gollides(green)
-                    && !rb4.gollides(green)
-                    && !rb5.gollides(green)) {
+            } else {
                 if (gime1 <= delayTime || gime1 == maxTime || gime2 <= delayTime || gime2 == maxTime
                         || gime3 <= delayTime || gime3 == maxTime || gime4 <= delayTime || gime4 == maxTime
                         || gime5 <= delayTime
                         || gime5 == maxTime) {
                     green.drawTank(g);
+                } else {
+                    green.setLocation(Integer.MAX_VALUE, Integer.MAX_VALUE);
                 }
-            } else {
-                green.setLocation(Integer.MAX_VALUE, Integer.MAX_VALUE);
             }
 
             if (time1 == maxTime || time1 == 0) {
